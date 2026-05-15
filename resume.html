@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Alwin Immanuel J – Resume</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:'Inter',sans-serif;background:#b8c5d0;-webkit-font-smoothing:antialiased;}
+
+    .bar{background:#111827;padding:9px 24px;display:flex;align-items:center;justify-content:space-between;}
+    .bar a{color:#9ca3af;text-decoration:none;font-size:12px;display:flex;align-items:center;gap:6px;}
+    .bar a:hover{color:#fff;}
+    .bar-btns{display:flex;gap:8px;}
+    .btn{padding:6px 15px;border-radius:5px;font-size:11px;font-weight:600;cursor:pointer;border:none;display:flex;align-items:center;gap:5px;font-family:inherit;transition:.2s;}
+    .btn-p{background:linear-gradient(135deg,#3b82f6,#1d4ed8);color:#fff;}
+    .btn-p:hover{transform:translateY(-1px);}
+    .btn-o{background:transparent;color:#fff;border:1px solid rgba(255,255,255,.3);}
+    .btn-o:hover{background:rgba(255,255,255,.1);}
+
+    /* A4 */
+    .page{
+      width:210mm;height:297mm;
+      margin:18px auto;
+      background:#fff;
+      box-shadow:0 6px 40px rgba(0,0,0,.25);
+      display:grid;
+      grid-template-columns:185px 1fr;
+      overflow:hidden;
+    }
+
+    /* ═══ LEFT DARK SIDEBAR ═══ */
+    .left{
+      background:#1c2b3a;
+      color:#fff;
+      display:flex;flex-direction:column;
+    }
+
+    /* photo */
+    .photo-wrap{
+      display:flex;flex-direction:column;align-items:center;
+      padding:20px 12px 14px;
+      background:#152231;
+      border-bottom:2px solid #2563eb;
+    }
+    .photo-wrap img{
+      width:90px;height:90px;border-radius:50%;
+      object-fit:cover;object-position:top center;
+      border:3px solid #3b82f6;
+      box-shadow:0 0 0 4px rgba(59,130,246,.2);
+      display:block;
+    }
+
+    .lbody{padding:12px 13px;flex:1;}
+
+    .s-hd{
+      font-size:.65rem;font-weight:700;color:#3b82f6;
+      letter-spacing:1.5px;text-transform:uppercase;
+      border-bottom:1px solid rgba(59,130,246,.3);
+      padding-bottom:4px;margin-bottom:8px;margin-top:12px;
+    }
+    .s-hd:first-child{margin-top:0;}
+
+    /* personal details */
+    .pd-item{font-size:.62rem;color:#cbd5e1;margin-bottom:4px;display:flex;gap:6px;align-items:flex-start;line-height:1.35;}
+    .pd-item i{color:#3b82f6;font-size:.58rem;margin-top:2px;flex-shrink:0;width:10px;}
+    .pd-item a{color:#93c5fd;text-decoration:none;word-break:break-all;}
+    .pd-item a:hover{color:#fff;}
+
+    /* skills */
+    .sk-item{font-size:.62rem;color:#cbd5e1;margin-bottom:3px;padding-left:10px;position:relative;line-height:1.3;}
+    .sk-item::before{content:'•';position:absolute;left:0;color:#3b82f6;}
+
+    /* certs in left */
+    .cert-l{font-size:.6rem;color:#94a3b8;margin-bottom:3px;padding-left:10px;position:relative;line-height:1.3;}
+    .cert-l::before{content:'✓';position:absolute;left:0;color:#3b82f6;font-size:.55rem;}
+
+    /* lang */
+    .lang-r{display:flex;justify-content:space-between;margin-bottom:4px;}
+    .lang-n{font-size:.62rem;color:#cbd5e1;}
+    .dots{display:flex;gap:2px;}
+    .dot{width:7px;height:7px;border-radius:50%;background:#2d4a66;}
+    .dot.on{background:#3b82f6;}
+
+    /* ═══ RIGHT WHITE ═══ */
+    .right{
+      background:#fff;
+      padding:20px 22px 14px;
+      overflow:hidden;
+    }
+
+    /* name block */
+    .name-block{margin-bottom:10px;border-bottom:2px solid #1c2b3a;padding-bottom:10px;}
+    .name-block h1{
+      font-family:'Poppins',sans-serif;
+      font-size:1.65rem;font-weight:800;
+      color:#111827;letter-spacing:-.3px;line-height:1.05;
+    }
+    .name-block .title{
+      font-size:.72rem;font-weight:600;color:#1c2b3a;
+      letter-spacing:.5px;text-transform:uppercase;margin-top:3px;
+    }
+    .name-block .summary{
+      font-size:.69rem;color:#4b5563;line-height:1.7;
+      margin-top:6px;text-align:justify;
+    }
+
+    /* section */
+    .sec{margin-bottom:8px;}
+    .sec-t{
+      font-size:.72rem;font-weight:700;color:#1c2b3a;
+      text-transform:uppercase;letter-spacing:.5px;
+      border-bottom:1.5px solid #1c2b3a;
+      padding-bottom:3px;margin-bottom:7px;
+    }
+
+    /* education */
+    .edu-row{display:flex;align-items:flex-start;gap:7px;margin-bottom:6px;}
+    .edu-icon{
+      width:14px;height:14px;border:1.5px solid #1c2b3a;
+      border-radius:2px;flex-shrink:0;margin-top:2px;
+      display:flex;align-items:center;justify-content:center;
+    }
+    .edu-icon i{font-size:.45rem;color:#1c2b3a;}
+    .edu-body{}
+    .edu-yr{font-size:.65rem;font-weight:700;color:#1c2b3a;}
+    .edu-school{font-size:.67rem;font-weight:600;color:#111827;}
+    .edu-deg{font-size:.63rem;color:#4b5563;}
+    .edu-gpa{font-size:.63rem;color:#374151;font-weight:500;}
+
+    /* internship */
+    .int{margin-bottom:6px;}
+    .int-hd{display:flex;justify-content:space-between;align-items:baseline;}
+    .int-t{font-size:.71rem;font-weight:700;color:#111827;}
+    .int-d{font-size:.62rem;color:#6b7280;white-space:nowrap;}
+    .int-role{font-size:.63rem;color:#1d4ed8;font-weight:600;margin:1px 0 3px;}
+    .int-ul{padding-left:12px;}
+    .int-ul li{font-size:.63rem;color:#374151;line-height:1.55;margin-bottom:2px;}
+
+    /* projects */
+    .proj{margin-bottom:6px;}
+    .proj-t{font-size:.72rem;font-weight:700;color:#111827;display:flex;align-items:center;gap:8px;flex-wrap:wrap;}
+    .proj-num{
+      background:#1c2b3a;color:#fff;
+      font-size:.52rem;font-weight:700;
+      width:14px;height:14px;border-radius:50%;
+      display:inline-flex;align-items:center;justify-content:center;flex-shrink:0;
+    }
+    .proj-gh{font-size:.58rem;color:#2563eb;text-decoration:none;display:inline-flex;align-items:center;gap:3px;}
+    .proj-gh:hover{text-decoration:underline;}
+    .proj-ul{padding-left:14px;margin-top:2px;}
+    .proj-ul li{font-size:.62rem;color:#374151;line-height:1.5;margin-bottom:2px;}
+
+    /* skills right */
+    .skill-cat{font-size:.65rem;color:#111827;margin-bottom:3px;line-height:1.4;}
+    .skill-cat strong{font-weight:700;}
+
+    /* achievements & certs right */
+    .ach-item{font-size:.63rem;color:#374151;margin-bottom:3px;display:flex;gap:6px;line-height:1.5;}
+    .ach-item::before{content:'•';color:#1c2b3a;font-size:.7rem;flex-shrink:0;}
+
+    @media print{
+      body{background:#fff;}
+      .bar{display:none;}
+      .page{margin:0;box-shadow:none;width:210mm;height:297mm;}
+      @page{margin:0;size:A4;}
+      .left,.photo-wrap{-webkit-print-color-adjust:exact;print-color-adjust:exact;}
+    }
+  </style>
+</head>
+<body>
+
+<div class="bar">
+  <a href="index.html">&#8592; Portfolio</a>
+  <div class="bar-btns">
+    <button class="btn btn-o" onclick="window.print()"><i class="fas fa-eye"></i> View</button>
+    <button class="btn btn-p" onclick="window.print()"><i class="fas fa-download"></i> Download PDF</button>
+  </div>
+</div>
+
+<div class="page">
+
+  <!-- ═══ LEFT ═══ -->
+  <div class="left">
+    <div class="photo-wrap">
+      <img src="assets/profile.jpg" alt="Alwin Immanuel J"
+        onerror="this.src='https://ui-avatars.com/api/?name=Alwin+J&size=90&background=152231&color=3b82f6&bold=true'">
+    </div>
+
+    <div class="lbody">
+
+      <div class="s-hd">Personal Details</div>
+      <div class="pd-item"><i class="fas fa-user"></i><span>Age: 21</span></div>
+      <div class="pd-item"><i class="fas fa-flag"></i><span>Nationality: Indian</span></div>
+      <div class="pd-item"><i class="fas fa-map-marker-alt"></i><span>Mudalur, Thoothukudi, Tamil Nadu</span></div>
+
+      <div class="s-hd">Contact</div>
+      <div class="pd-item"><i class="fas fa-phone"></i><span>+91 9842040908</span></div>
+      <div class="pd-item"><i class="fas fa-envelope"></i><a href="mailto:allvinimmanuvel@gmail.com">allvinimmanuvel@gmail.com</a></div>
+      <div class="pd-item"><i class="fab fa-linkedin"></i><a href="https://linkedin.com/in/allvin-immanuvel-0a8517360" target="_blank">LinkedIn Profile</a></div>
+      <div class="pd-item"><i class="fab fa-github"></i><a href="https://github.com/Allwinimmanuel" target="_blank">github.com/Allwinimmanuel</a></div>
+
+      <div class="s-hd">Skills</div>
+      <div class="sk-item">Business Analytics &amp; Power BI</div>
+      <div class="sk-item">DAX &amp; Data Modeling</div>
+      <div class="sk-item">Excel &amp; Tableau</div>
+      <div class="sk-item">Python &amp; SQL</div>
+      <div class="sk-item">Pandas &amp; NumPy</div>
+      <div class="sk-item">MySQL &amp; Database Design</div>
+      <div class="sk-item">Java</div>
+      <div class="sk-item">Flask &amp; Spring Boot</div>
+      <div class="sk-item">Scikit-learn &amp; OpenAI API</div>
+      <div class="sk-item">Git, Jupyter, Snowflake</div>
+      <div class="sk-item">Leadership &amp; Communication</div>
+      <div class="sk-item">Critical Thinking</div>
+
+      <div class="s-hd">Certifications</div>
+      <div class="cert-l">Power BI &amp; DAX Analytics</div>
+      <div class="cert-l">Snowflake SnowPro Core</div>
+      <div class="cert-l">NPTEL – Data Analytics (IIT)</div>
+      <div class="cert-l">NPTEL – Cloud Computing (IIT)</div>
+      <div class="cert-l">NPTEL – Industry 4.0 &amp; IIoT</div>
+      <div class="cert-l">Cisco – Networking Basics</div>
+      <div class="cert-l">Business Analytics – Simplilearn</div>
+      <div class="cert-l">C++ OOP Programming</div>
+
+      <div class="s-hd">Language</div>
+      <div class="lang-r"><span class="lang-n">English</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot"></div></div></div>
+      <div class="lang-r"><span class="lang-n">Tamil</span><div class="dots"><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div><div class="dot on"></div></div></div>
+
+    </div>
+  </div>
+
+  <!-- ═══ RIGHT ═══ -->
+  <div class="right">
+
+    <div class="name-block">
+      <h1>Alwin Immanuel J</h1>
+      <div class="title">B.E Computer Science And Engineering</div>
+      <div class="summary">Full-stack focused Computer Science student with hands-on experience in building analytics dashboards, data pipelines, and AI-powered solutions. Strong in Power BI, DAX, SQL, Python, and MySQL with a passion for real-world data analytics and business intelligence development.</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t">Education</div>
+      <div class="edu-row">
+        <div class="edu-icon"><i class="fas fa-check"></i></div>
+        <div class="edu-body">
+          <div class="edu-yr">2023 – 2027</div>
+          <div class="edu-school">National Engineering College, Kovilpatti.</div>
+          <div class="edu-gpa">CGPA: 7.5 &nbsp;|&nbsp; CURRENT YEAR: 3RD</div>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-icon"><i class="fas fa-check"></i></div>
+        <div class="edu-body">
+          <div class="edu-yr">2022 – 2024</div>
+          <div class="edu-school">Jayaraj Annapackiam CSI Polytechnic, Nazareth</div>
+          <div class="edu-deg">Diploma in Engineering &nbsp;|&nbsp; 89%</div>
+        </div>
+      </div>
+      <div class="edu-row">
+        <div class="edu-icon"><i class="fas fa-check"></i></div>
+        <div class="edu-body">
+          <div class="edu-yr">2020 – 2022</div>
+          <div class="edu-school">St. Michael's Higher Secondary School, Mudalur</div>
+          <div class="edu-deg">Senior Secondary Education</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t">Technical Skills</div>
+      <div class="skill-cat"><strong>Analytics &amp; BI:</strong> Power BI, DAX, Excel, Tableau, KPI Dashboards, Data Storytelling</div>
+      <div class="skill-cat"><strong>Programming:</strong> Python, SQL, Java, Pandas, NumPy, Scikit-learn</div>
+      <div class="skill-cat"><strong>Database:</strong> MySQL, Data Modeling, Stored Procedures, SQL Joins &amp; Window Functions</div>
+      <div class="skill-cat"><strong>AI &amp; Tools:</strong> OpenAI API, Flask, Spring Boot, LLM Integration, Git, Jupyter, Snowflake</div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t">Internship</div>
+      <div class="int">
+        <div class="int-hd"><span class="int-t">TechNest – Business Analytics Intern</span><span class="int-d">2025</span></div>
+        <ul class="int-ul">
+          <li>Built automated data pipelines for business reporting and Excel dashboards for stakeholder insights.</li>
+          <li>Analyzed operational data to identify business trends and delivered actionable recommendations.</li>
+        </ul>
+      </div>
+      <div class="int">
+        <div class="int-hd"><span class="int-t">Prodigy InfoTech – Data Science Intern</span><span class="int-d">2025</span></div>
+        <ul class="int-ul">
+          <li>Developed ML models using Python and Scikit-learn; performed EDA and feature engineering on datasets.</li>
+        </ul>
+      </div>
+      <div class="int">
+        <div class="int-hd"><span class="int-t">CodSoft – Data Science Intern</span><span class="int-d">2025</span></div>
+        <ul class="int-ul">
+          <li>Completed data analysis, cleaning, and visual reporting tasks using Python, Pandas, and Matplotlib.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t">Projects</div>
+
+      <div class="proj">
+        <div class="proj-t"><span class="proj-num">1</span> Starbucks Sales Dashboard <a class="proj-gh" href="https://github.com/Allwinimmanuel/Starbucks_dashboard" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        <ul class="proj-ul">
+          <li>Interactive Power BI dashboard with DAX measures tracking sales, revenue &amp; product performance.</li>
+          <li>Applied star-schema data modeling; implemented drill-through filters for granular business analysis.</li>
+          <li>Delivered KPI cards and trend charts enabling strategic decision-making for business stakeholders.</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <div class="proj-t"><span class="proj-num">2</span> E-Commerce Analytics Pipeline <a class="proj-gh" href="https://github.com/Allwinimmanuel/MCP-PROJECT" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        <ul class="proj-ul">
+          <li>End-to-end pipeline: auto-generates e-commerce data every minute, stores in MySQL, reports in Power BI.</li>
+          <li>Applied SQL window functions and CTEs; detected loss-making products and risky discount patterns.</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <div class="proj-t"><span class="proj-num">3</span> AI Document Classifier (LLM) <a class="proj-gh" href="https://github.com/Allwinimmanuel/Document-classifier-llm" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        <ul class="proj-ul">
+          <li>Flask app using OpenAI GPT to classify business documents with confidence scoring and entity extraction.</li>
+          <li>Automated routing to Finance, HR, Operations, Legal; stored results in MySQL for audit trails.</li>
+        </ul>
+      </div>
+
+      <div class="proj">
+        <div class="proj-t"><span class="proj-num">4</span> Laboratory Management System <a class="proj-gh" href="https://github.com/Allwinimmanuel/LabMS---Laboratory-Management-System" target="_blank"><i class="fab fa-github"></i> GitHub</a></div>
+        <ul class="proj-ul">
+          <li>Full-stack app: React + Node.js + MySQL with JWT auth, role-based access, equipment &amp; booking management.</li>
+          <li>Analytics dashboard for lab utilization; AI-assisted natural language query support for equipment search.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sec">
+      <div class="sec-t">Awards and Certifications</div>
+      <div class="ach-item">Snowflake SnowPro Core – Cloud Data Platform Certification</div>
+      <div class="ach-item">NPTEL Discipline Star – Data Analytics, IIT Madras</div>
+      <div class="ach-item">NPTEL – Cloud Computing, IIT Bombay &amp; Industry 4.0 &amp; IIoT, IIT Kharagpur</div>
+      <div class="ach-item">1000+ SkillRack Problems Solved – including Daily Tests and Daily Challenges consistently</div>
+      <div class="ach-item">3 Industry Internships completed – TechNest (Business Analytics), Prodigy InfoTech &amp; CodSoft (Data Science)</div>
+      <div class="ach-item">Cisco Networking Basics Certification – Network Addressing &amp; Troubleshooting</div>
+    </div>
+
+  </div>
+</div>
+
+<script>
+function downloadResume(){ window.print(); }
+</script>
+</body>
+</html>

@@ -1,0 +1,674 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description"
+    content="Portfolio of Alwin Immanuel J - Computer Science Engineering Student, Data Analyst & AI Enthusiast">
+  <title>Alwin Immanuel J | Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+  <canvas id="particles-canvas"></canvas>
+
+  <!-- NAVBAR -->
+  <nav class="navbar" id="navbar">
+    <div class="container">
+      <a href="#home" class="nav-logo">Alwin Immanuel J</a>
+      <div class="nav-links" id="nav-links">
+        <a href="#home" class="active">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </div>
+      <div class="hamburger" id="hamburger"><span></span><span></span><span></span></div>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-content">
+        <p class="hero-greeting">Hello, It's Me</p>
+        <h1 class="hero-name">Alwin <span>Immanuel J</span></h1>
+        <h2 class="hero-title">And I'm a <span id="typed-text">Data Analyst</span><span class="typed-cursor">|</span>
+        </h2>
+        <p class="hero-desc">A highly motivated B.E. Computer Science student (4th year) with a strong interest in data
+          engineering, analytics, AI/ML, and full-stack development. Passionate about transforming raw data into
+          meaningful insights and building scalable solutions.</p>
+        <div class="hero-buttons">
+          <a href="https://github.com/Allwinimmanuel" target="_blank" class="btn btn-primary"><i
+              class="fab fa-github"></i> GitHub</a>
+          <a href="https://www.linkedin.com/in/allvin-immanuvel-0a8517360/" target="_blank" class="btn btn-outline"><i
+              class="fab fa-linkedin"></i> LinkedIn</a>
+          <a href="resume.html" target="_blank" class="btn btn-primary"
+            style="background: linear-gradient(135deg, #00d4ff, #7b61ff); color: #000; box-shadow: 0 4px 20px rgba(0, 212, 255, 0.3);"><i
+              class="fas fa-file-pdf"></i> Resume</a>
+        </div>
+        <div class="hero-socials">
+          <a href="https://github.com/Allwinimmanuel" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/allvin-immanuvel-0a8517360/" target="_blank" title="LinkedIn"><i
+              class="fab fa-linkedin-in"></i></a>
+          <a href="#contact" title="Email"><i class="fas fa-envelope"></i></a>
+          <a href="https://skillrack.com/faces/ui/profile.xhtml" target="_blank" title="SkillRack"><i
+              class="fas fa-code"></i></a>
+        </div>
+      </div>
+      <div class="hero-image">
+        <div class="hero-image-wrapper">
+          <img src="assets/profile.jpg" alt="Alwin Immanuel J"
+            onerror="this.src='https://ui-avatars.com/api/?name=Alwin+Immanuel&size=320&background=0a0a0f&color=00d4ff&bold=true&font-size=0.4'">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Get To Know</p>
+        <h2 class="section-title">About <span>Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="about-grid">
+        <div class="about-image-card reveal-left">
+          <span class="img-badge">&#x1F4BC; Open to Work</span>
+          <img src="assets/profile.jpg" alt="Alwin Immanuel J"
+            onerror="this.src='https://ui-avatars.com/api/?name=AJ&size=400&background=12121a&color=00d4ff&bold=true'">
+          <div class="about-stats">
+            <div class="stat-item">
+              <div class="stat-number">5+</div>
+              <div class="stat-label">Data Projects</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">1000+</div>
+              <div class="stat-label">SkillRack Solved</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">16+</div>
+              <div class="stat-label">Certifications</div>
+            </div>
+          </div>
+        </div>
+        <div class="about-text reveal-right">
+          <h3>Data Analyst & AI Enthusiast</h3>
+          <p>I'm Alwin Immanuel J, a Computer Science Engineering student at National Engineering College, Kovilpatti. I
+            have hands-on experience in Excel, Power BI, Tableau, and data pipeline processes, where I enjoy
+            transforming raw data into meaningful insights and building scalable reporting solutions.</p>
+          <p>My projects include a Starbucks Sales Dashboard in Power BI, an end-to-end E-Commerce Analytics Pipeline,
+            an AI-powered Document Classifier using OpenAI, and a full-stack Laboratory Management System. I am
+            passionate about turning raw data into business insights and constantly growing as a Data Analyst and
+            Business Intelligence Developer.</p>
+          <div class="about-info">
+            <div class="about-info-item"><span class="label">Name:</span><span class="value">Alwin Immanuel J</span>
+            </div>
+            <div class="about-info-item"><span class="label">Email:</span><span
+                class="value"><a href="mailto:allvinimmanuvel@gmail.com" style="color:var(--text-color); text-decoration:none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-color)'">allvinimmanuvel@gmail.com</a></span></div>
+            <div class="about-info-item"><span class="label">Phone:</span><span class="value"><a href="tel:+919842040908" style="color:var(--text-color); text-decoration:none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-color)'">+91 9842040908</a></span>
+            </div>
+            <div class="about-info-item"><span class="label">Location:</span><span class="value"><a href="https://maps.google.com/?q=Mudalur,+Thoothukudi,+TN" target="_blank" style="color:var(--text-color); text-decoration:none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-color)'">Mudalur, Thoothukudi, TN</a></span></div>
+            <div class="about-info-item"><span class="label">Languages:</span><span class="value">English, Tamil</span>
+            </div>
+            <div class="about-info-item"><span class="label">Degree:</span><span class="value">B.E. Computer
+                Science</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section id="education">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">My Journey</p>
+        <h2 class="section-title">Education <span>Timeline</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2023 - 2027</span>
+            <h4>National Engineering College, Kovilpatti</h4>
+            <p>B.E. Computer Science and Engineering</p>
+            <p class="cgpa"><i class="fas fa-graduation-cap"></i> CGPA: 7.5</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2022 - 2024</span>
+            <h4>Jayaraj Annapackiam CSI Polytechnic College</h4>
+            <p>Diploma, Nazareth, Thoothukudi District</p>
+            <p class="cgpa"><i class="fas fa-star" style="font-size:0.8rem; color:var(--accent); margin-right:4px;"></i> Percentage: 89%</p>
+          </div>
+        </div>
+        <div class="timeline-item reveal">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <span class="timeline-year">2020 - 2022</span>
+            <h4>St. Michael's Higher Secondary School</h4>
+            <p>Senior Secondary Education, Mudalur, Thoothukudi District</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section id="skills">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">My Domain</p>
+        <h2 class="section-title">Technical <span>Expertise</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="skills-grid">
+
+        <!-- Business Analytics & BI -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon" style="background:rgba(0,180,216,0.15);color:#00b4d8"><i class="fas fa-chart-bar"></i></div>
+          <h4>Business Analytics &amp; BI</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Power BI</span>
+            <span class="skill-tag">Excel</span>
+            <span class="skill-tag">DAX</span>
+            <span class="skill-tag">Tableau</span>
+            <span class="skill-tag">KPI Dashboards</span>
+          </div>
+        </div>
+
+        <!-- Data Analysis -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon" style="background:rgba(6,214,160,0.15);color:#06d6a0"><i class="fas fa-chart-line"></i></div>
+          <h4>Data Analysis</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">EDA</span>
+            <span class="skill-tag">SQL Queries</span>
+            <span class="skill-tag">Window Functions</span>
+            <span class="skill-tag">Data Cleaning</span>
+            <span class="skill-tag">Pandas &amp; NumPy</span>
+          </div>
+        </div>
+
+        <!-- Programming Languages -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon" style="background:rgba(255,166,0,0.15);color:#ffaa00"><i class="fas fa-code"></i></div>
+          <h4>Programming</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Java</span>
+          </div>
+        </div>
+
+        <!-- Database -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon" style="background:rgba(123,97,255,0.15);color:#7b61ff"><i class="fas fa-database"></i></div>
+          <h4>Database</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL Joins &amp; Aggregations</span>
+            <span class="skill-tag">Stored Procedures</span>
+            <span class="skill-tag">Data Modeling</span>
+          </div>
+        </div>
+
+        <!-- AI Tools Used in Projects -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon" style="background:rgba(255,89,94,0.15);color:#ff595e"><i class="fas fa-robot"></i></div>
+          <h4>AI Tools</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">OpenAI API</span>
+            <span class="skill-tag">LLM Integration</span>
+            <span class="skill-tag">Python ML Libraries</span>
+            <span class="skill-tag">Scikit-learn</span>
+          </div>
+        </div>
+
+        <!-- Tools & Platforms -->
+        <div class="skill-card reveal">
+          <div class="skill-card-icon" style="background:rgba(0,212,255,0.15);color:#00d4ff"><i class="fas fa-tools"></i></div>
+          <h4>Tools &amp; Platforms</h4>
+          <div class="skill-tags">
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">Git &amp; GitHub</span>
+            <span class="skill-tag">Snowflake</span>
+            <span class="skill-tag">Flask</span>
+            <span class="skill-tag">Spring Boot</span>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">My Work</p>
+        <h2 class="section-title">Featured <span>Projects</span></h2>
+        <div class="section-line"></div>
+      <div class="projects-grid">
+        <!-- 1 -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-pie"></i></div>
+            <div class="project-links"><a href="https://github.com/Allwinimmanuel/Starbucks_dashboard" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <h4>Starbucks Sales Dashboard</h4>
+            <p>Built an interactive Power BI dashboard to track sales trends, revenue, and product performance, enabling business insight and strategic decision-making with dynamic visualizations and filters.</p>
+            <div class="project-tech"><span>Power BI</span><span>Data Modeling</span><span>DAX</span></div>
+          </div>
+        </div>
+        <!-- 2 -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-chart-line"></i></div>
+            <div class="project-links"><a href="https://github.com/Allwinimmanuel/MCP-PROJECT" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <h4>E-Commerce Analytics Pipeline</h4>
+            <p>An end-to-end e-commerce analytics pipeline featuring automated data generation, real-time MySQL storage, Python data processing with Jupyter notebooks, and interactive Power BI dashboards.</p>
+            <div class="project-tech"><span>Python</span><span>Power BI</span><span>MySQL</span><span>Jupyter</span></div>
+          </div>
+        </div>
+        <!-- 3 -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-robot"></i></div>
+            <div class="project-links"><a href="https://github.com/Allwinimmanuel/Document-classifier-llm" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <h4>AI Document Classifier (LLM)</h4>
+            <p>An AI-powered document classification and routing system that automatically categorizes business documents using OpenAI GPT models with confidence scoring, entity extraction, and smart department routing.</p>
+            <div class="project-tech"><span>Python</span><span>Flask</span><span>OpenAI</span><span>NLP</span><span>OCR</span></div>
+          </div>
+        </div>
+        <!-- 4 -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-flask"></i></div>
+            <div class="project-links"><a href="https://github.com/Allwinimmanuel/LabMS---Laboratory-Management-System" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <h4>Laboratory Management System</h4>
+            <p>A full-stack web application that manages laboratory equipment, users, bookings, and analytics using React, Node.js, and MySQL, featuring role-based access, JWT authentication, and AI-assisted query support.</p>
+            <div class="project-tech"><span>React</span><span>Node.js</span><span>MySQL</span><span>JWT</span><span>AI</span></div>
+          </div>
+        </div>
+        <!-- 5 -->
+        <div class="project-card reveal">
+          <div class="project-header">
+            <div class="project-icon"><i class="fas fa-book"></i></div>
+            <div class="project-links"><a href="https://github.com/Allwinimmanuel/library-management-system" target="_blank"><i class="fab fa-github"></i></a></div>
+          </div>
+          <div class="project-body">
+            <h4>OPAC Library Management System</h4>
+            <p>Designed a Spring Boot and MySQL-based system for book catalog management, implementing search and retrieval features with an optimized database model and a JavaScript full-stack frontend.</p>
+            <div class="project-tech"><span>Spring Boot</span><span>MySQL</span><span>JavaScript</span><span>REST API</span></div>
+          </div>
+        </div>
+      </div>
+</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CERTIFICATIONS -->
+  <section id="certifications">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Credentials</p>
+        <h2 class="section-title">Certifications & <span>Achievements</span></h2>
+        <div class="section-line"></div>
+      </div>
+
+      <div class="achievements-grid reveal" style="margin-bottom:60px">
+        <div class="achievement-card">
+          <div class="achievement-number" data-target="1000" data-suffix="+">0</div>
+          <h4>SkillRack Problems</h4>
+          <p>Daily Tests &amp; Challenges</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number" data-target="5" data-suffix="+">0</div>
+          <h4>Data Projects</h4>
+          <p>Analytics &amp; BI Dashboards</p>
+        </div>
+        <div class="achievement-card">
+          <div class="achievement-number" data-target="16" data-suffix="+">0</div>
+          <h4>Certifications</h4>
+          <p>Professional Credentials</p>
+        </div>
+      </div>
+
+      <div class="certs-grid">
+
+        <!-- 1 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Technest offer letter_page-0001.jpg" alt="TechNest Offer Letter">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(0,212,255,0.12);color:#00d4ff">TechNest</span>
+            <h4>Business Analytics Intern</h4>
+            <p>Business Analytics · Data Pipelines · Reporting</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_internship-businessanalytics-technestintern-activity-7340733637803294720-1rDW"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 2 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Technest_page-0001.jpg" alt="TechNest Completion Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(123,97,255,0.12);color:#7b61ff">TechNest</span>
+            <h4>Business Analytics Completion</h4>
+            <p>Analytics · Excel · Data Skills</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_businessanalytics-internship-technestintern-activity-7342982238218706944-RcN6"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 3 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="prodigy Offer Letter _page-0001.jpg" alt="Prodigy Offer Letter">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(247,37,133,0.12);color:#f72585">Prodigy
+              InfoTech</span>
+            <h4>Data Science Intern</h4>
+            <p>Data Science · ML · Python</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_datascience-internshipopportunity-prodigyinfotech-activity-7349738834462404608-p9E9"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 4 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Prodigy_page-0001.jpg" alt="Prodigy Completion Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(247,127,0,0.12);color:#f77f00">Prodigy
+              InfoTech</span>
+            <h4>Data Science Completion</h4>
+            <p>Data Science · Internship Success</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_datascience-internshipsuccess-prodigyinfotech-activity-7356995798573752320-qsV3"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 5 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="codsoft offer letter_page-0001.jpg" alt="CodSoft Offer Letter">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(0,180,216,0.12);color:#00b4d8">CodSoft</span>
+            <h4>Data Science Intern</h4>
+            <p>Data Science · AI · Python</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_internship-datascience-codsoft-activity-7350451590689906689-5YLb"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 6 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Codsoft_page-0001.jpg" alt="CodSoft Completion Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(76,201,240,0.12);color:#4cc9f0">CodSoft</span>
+            <h4>Data Science Completion</h4>
+            <p>Data Science · Internship</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_codsoft-datascience-internship-activity-7354019332126875649-hIez"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+
+
+        <!-- 9 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Data Analytics with Python_page-0001.jpg" alt="NPTEL Data Analytics with Python Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(255,214,10,0.12);color:#e85d04">IIT &bull; NPTEL</span>
+            <h4>Data Analytics with Python</h4>
+            <p>Python · Data Analytics · IIT</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_nptel-dataanalytics-python-activity-7343631852861046784-_sFZ"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 10 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Technical English for Engineers_page-0001.jpg" alt="NPTEL Technical English Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(255,214,10,0.12);color:#e85d04">IIT Madras</span>
+            <h4>NPTEL: Technical English</h4>
+            <p>Technical English · Communication</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_nptel-iitmadras-technicalenglish-activity-7460709507921330176-WmK_"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 11 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Privacy and Security in Online Social Media_page-0001.jpg" alt="NPTEL Cybersecurity Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(239,35,60,0.12);color:#ef233c">IIT &bull; NPTEL</span>
+            <h4>NPTEL: Cybersecurity & Privacy</h4>
+            <p>Cybersecurity · Privacy · IIT</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_nptel-cybersecurity-privacy-activity-7460709869604560896-lseG"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 12 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Cloud Computing_page-0001.jpg" alt="NPTEL Cloud Computing Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(72,202,228,0.12);color:#48cae4">IIT &bull; NPTEL</span>
+            <h4>NPTEL: Cloud Computing</h4>
+            <p>Cloud Technology · IIT</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_nptel-cloudcomputing-cloudtechnology-activity-7460710336694939648-WfpU"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 13 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Introduction to Industry 4.0 and Industrial Internet of Things_page-0001.jpg" alt="NPTEL Industry 4.0 Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(128,185,24,0.12);color:#80b918">IIT &bull; NPTEL</span>
+            <h4>NPTEL: Industry 4.0 & IIoT</h4>
+            <p>Industry 4.0 · IIoT · Smart Manufacturing</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_nptel-industry40-iiot-activity-7460710680321507328-UWn1"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 14 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="J.Alwin Immanuel - CSE PowerBi.jpg" alt="Power BI Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(244,162,97,0.12);color:#f4a261">Power BI</span>
+            <h4>Power BI - Data Analytics</h4>
+            <p>Business Intelligence · DAX · Dashboards</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_powerbi-dataanalytics-businessintelligence-activity-7460707672875782145-NlzY"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 15 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Simplilearn Certificate _page-0001.jpg" alt="Business Analytics & Excel Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(45,198,83,0.12);color:#2dc653">Excel /
+              Analytics</span>
+            <h4>Business Analytics & Excel</h4>
+            <p>Excel · Data Skills · Business Analytics</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_businessanalytics-excel-dataskills-activity-7343883898386350080-Xbt9"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 16 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Cpp training_page-0001.jpg" alt="C++ Programming Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(123,97,255,0.12);color:#7b61ff">Programming</span>
+            <h4>C++ Programming</h4>
+            <p>C++ · Object Oriented Programming</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_cpp-cplusplus-programming-activity-7460707116157140992-kdnp"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 17 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Network_Addressing_and_Basic_Troubleshooting_certificate_2312404-nec-edu-in_8fedcb62-dc5e-4bca-adde-8f8df9d1926d_page-0001.jpg" alt="Cisco Networking Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(0,212,255,0.12);color:#00d4ff">Cisco</span>
+            <h4>Cisco Networking Academy</h4>
+            <p>Networking · Cisco · Fundamentals</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_cisco-cisconetworkingacademy-networking-activity-7460706632117821440-cHIU"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+        <!-- 18 -->
+        <div class="cert-img-card reveal">
+          <div class="cert-image-preview">
+            <img src="Snowflake_page-0001.jpg" alt="Snowflake SnowPro Certificate">
+          </div>
+          <div class="cert-img-body">
+            <span class="cert-issuer-badge" style="background:rgba(41,180,232,0.12);color:#29b4e8">Snowflake</span>
+            <h4>Snowflake SnowPro</h4>
+            <p>Cloud Data Platform · Snowflake</p>
+            <a href="https://www.linkedin.com/posts/allvin-immanuvel-0a8517360_snowflake-snowpro-cloudcomputing-activity-7460699159143223296-4GXi"
+              target="_blank" class="cert-view-btn"><i class="fab fa-linkedin"></i> View Certificate</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <div class="container">
+      <div class="section-header reveal">
+        <p class="section-subtitle">Get In Touch</p>
+        <h2 class="section-title">Contact <span>Me</span></h2>
+        <div class="section-line"></div>
+      </div>
+      <div class="contact-grid">
+        <div class="contact-info-cards">
+          <div class="contact-card reveal-left">
+            <div class="contact-card-icon"><i class="fas fa-envelope"></i></div>
+            <div>
+              <h4>Email</h4>
+              <p><a href="mailto:allvinimmanuvel@gmail.com" style="color:var(--text-color); text-decoration:none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-color)'">allvinimmanuvel@gmail.com</a></p>
+            </div>
+          </div>
+          <div class="contact-card reveal-left">
+            <div class="contact-card-icon"><i class="fas fa-phone"></i></div>
+            <div>
+              <h4>Phone</h4>
+              <p><a href="tel:+919842040908" style="color:var(--text-color); text-decoration:none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-color)'">+91 9842040908</a></p>
+            </div>
+          </div>
+          <div class="contact-card reveal-left">
+            <div class="contact-card-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div>
+              <h4>Location</h4>
+              <p><a href="https://maps.google.com/?q=2/138+2nd+Street,+Mudalur,+Thoothukudi,+Tamil+Nadu" target="_blank" style="color:var(--text-color); text-decoration:none; transition: color 0.3s ease;" onmouseover="this.style.color='var(--accent)'" onmouseout="this.style.color='var(--text-color)'">2/138 2nd Street, Mudalur, Thoothukudi, Tamil Nadu</a></p>
+            </div>
+          </div>
+          <div class="contact-card reveal-left">
+            <div class="contact-card-icon"><i class="fab fa-linkedin-in"></i></div>
+            <div>
+              <h4>LinkedIn</h4>
+              <p><a href="https://www.linkedin.com/in/allvin-immanuvel-0a8517360/" target="_blank"
+                  style="color:var(--accent)">Connect on LinkedIn</a></p>
+            </div>
+          </div>
+        </div>
+        <form class="contact-form reveal-right" id="contact-form">
+          <div class="form-group"><input type="text" name="name" placeholder="Your Name" required></div>
+          <div class="form-group"><input type="email" name="email" placeholder="Your Email" required></div>
+          <div class="form-group"><textarea name="message" placeholder="Your Message" required></textarea></div>
+          <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center"><i
+              class="fas fa-paper-plane"></i> Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-socials">
+        <a href="https://github.com/Allwinimmanuel" target="_blank"><i class="fab fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/allvin-immanuvel-0a8517360/" target="_blank"><i
+            class="fab fa-linkedin-in"></i></a>
+        <a href="mailto:allvinimmanuvel@gmail.com"><i class="fas fa-envelope"></i></a>
+        <a href="https://skillrack.com/faces/ui/profile.xhtml" target="_blank"><i class="fas fa-code"></i></a>
+      </div>
+      <p>Copyright &copy; 2026 by <span>Alwin Immanuel J</span> | All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <button class="scroll-top" id="scroll-top"><i class="fas fa-arrow-up"></i></button>
+
+  <!-- CERTIFICATE LIGHTBOX -->
+  <div class="cert-lightbox" id="cert-lightbox">
+    <div class="cert-lightbox-backdrop" id="cert-lightbox-backdrop"></div>
+    <div class="cert-lightbox-content">
+      <button class="cert-lightbox-close" id="cert-lightbox-close"><i class="fas fa-times"></i></button>
+      <button class="cert-lightbox-nav prev" id="cert-lb-prev"><i class="fas fa-chevron-left"></i></button>
+      <button class="cert-lightbox-nav next" id="cert-lb-next"><i class="fas fa-chevron-right"></i></button>
+      <img id="cert-lightbox-img" src="" alt="Certificate">
+      <div class="cert-lightbox-caption" id="cert-lightbox-caption"></div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
+
