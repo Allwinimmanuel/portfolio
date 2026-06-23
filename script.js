@@ -165,16 +165,7 @@ function initScrollTop() {
 
 // ===== FORM =====
 function initForm() {
-  const form = document.getElementById('contact-form');
-  if (!form) return;
-  form.addEventListener('submit', (e) => {
-    e.preventDefault();
-    const name = form.querySelector('[name="name"]').value;
-    const email = form.querySelector('[name="email"]').value;
-    const message = form.querySelector('[name="message"]').value;
-    const mailtoLink = `mailto:allvinimmanuvel@gmail.com?subject=Portfolio Contact from ${encodeURIComponent(name)}&body=${encodeURIComponent(message)}%0A%0AFrom: ${encodeURIComponent(name)} (${encodeURIComponent(email)})`;
-    window.location.href = mailtoLink;
-  });
+  // We now use FormSubmit native action in index.html, no JS interception needed.
 }
 
 // ===== INIT =====
