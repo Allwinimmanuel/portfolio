@@ -165,7 +165,47 @@ function initScrollTop() {
 
 // ===== FORM =====
 function initForm() {
-  // We now use FormSubmit native action in index.html, no JS interception needed.
+  const form = document.getElementById('contact-form');
+  if (!form) return;
+  
+  form.addEventListener('submit', (e) => {
+    e.preventDefault();
+    const btn = form.querySelector('button[type="submit"]');
+    const originalText = btn.innerHTML;
+    
+    btn.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Sending...';
+    btn.disabled = true;
+
+    const name = form.querySelector('[name="name"]').value;
+    const email = form.querySelector('[name="email"]').value;
+    const message = form.querySelector('[name="message"]').value;
+
+    fetch("https://formsubmit.co/ajax/allvinimmanuvel@gmail.com", {
+      method: "POST",
+      headers: { 
+          'Content-Type': 'application/json',
+          'Accept': 'application/json'
+      },
+      body: JSON.stringify({
+          name: name,
+          email: email,
+          message: message,
+          _subject: "New message from your portfolio!"
+      })
+    })
+    .then(response => response.json())
+    .then(data => {
+        alert("Message sent successfully! (Note: Remember to click 'Activate Form' in your email if you haven't yet)");
+        form.reset();
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+    })
+    .catch(error => {
+        alert("Error sending message. Please try again.");
+        btn.innerHTML = originalText;
+        btn.disabled = false;
+    });
+  });
 }
 
 // ===== INIT =====
